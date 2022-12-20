@@ -16,8 +16,6 @@ fetch('https://rickandmortyapi.com/api/character')
     .then(dados => {
         const char = dados.results
 
-        console.log(char[0])
-
         person.setAttribute('src', char[idPerson].image)
         namePerson.innerHTML = char[idPerson].name
         buttons.forEach(btn => {
