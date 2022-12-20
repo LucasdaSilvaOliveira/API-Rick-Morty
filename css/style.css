@@ -25,6 +25,7 @@ body {
     text-shadow: 2px 2px 3px #0000006c;
     transform: rotate(-30deg);
     animation: bio 6000ms ease-in-out infinite;
+    cursor: default;
 }
 @keyframes bio {
     0% {
