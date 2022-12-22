@@ -10,8 +10,29 @@ const info = document.querySelector('.info')
 const close = document.getElementById('close')
 const songClick = document.getElementById('hide')
 const themeSong = document.getElementById('theme-song')
+const configMusic = document.querySelectorAll('.song-config')
+const songOn = document.querySelector('.on')
+const songOff = document.querySelector('.off')
 
-body.onmouseover = () => themeSong.play()
+configMusic.forEach(button => {
+    button.addEventListener('click', () => {
+        let on = button.classList.contains('on')
+        let off = button.classList.contains('off')
+        if(on) {
+            songClick.play()
+            themeSong.setAttribute('src', 'audios/RAMtheme-song.mp3')
+            themeSong.play()
+            songOn.style.backgroundColor = '#4dd648'
+            songOff.style.backgroundColor = 'white'
+            songOn.style.borderRadius = '0px 0px 10px 10px'
+        } else if(off) {
+            songClick.play()
+            themeSong.setAttribute('src', null)
+            songOff.style.backgroundColor = '#d64848'
+            songOn.style.backgroundColor = 'white'
+        }
+    })
+})
 
 let idPerson = 0
 
