@@ -53,9 +53,6 @@ h1 {
     animation: animação 2000ms ease-in-out infinite;
     width: 100vw;
 }
-.conteudo {
-   
-}
 #nome-personagem {
     cursor: pointer;
 }
