@@ -22,7 +22,7 @@
         font-size: 40px;
     }
     footer {
-        bottom: 0px;
+        display: none;
     }
     #informe {
         display: none;
