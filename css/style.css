@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-y: hidden;
 }
 #informe {
     position: absolute;

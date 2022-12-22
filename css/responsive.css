@@ -1,15 +1,18 @@
 @media (max-width: 685px) {
     .container {
-        transform: translateY(30px);
+        transform: translateY(-30px);
     }
 }
 @media (max-width: 600px) {
     .conteudo {
-        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
     }
     .info {
         align-items: center;
-        width: 100%;
+        width: 100vw;
         border-radius: 0px;
     }
     h1 {
@@ -20,5 +23,9 @@
     }
     #informe {
         display: none;
+    }
+    .container {
+        margin: 0px auto;
+        
     }
 }
