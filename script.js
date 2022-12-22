@@ -9,6 +9,9 @@ const orig = document.getElementById('origin')
 const info = document.querySelector('.info')
 const close = document.getElementById('close')
 const songClick = document.getElementById('hide')
+const themeSong = document.getElementById('theme-song')
+
+body.onmouseover = () => themeSong.play()
 
 let idPerson = 0
 
@@ -22,6 +25,7 @@ fetch('https://rickandmortyapi.com/api/character')
         buttons.forEach(btn => {
             btn.addEventListener('click', () => {
                 songClick.play()
+                
                 let left = btn.classList.contains('arrow-left')
                 if (left) {
                     idPerson -= 1
