@@ -8,6 +8,7 @@ const locat = document.getElementById('location')
 const orig = document.getElementById('origin')
 const info = document.querySelector('.info')
 const close = document.getElementById('close')
+const songClick = document.getElementById('hide')
 
 let idPerson = 0
 
@@ -20,6 +21,7 @@ fetch('https://rickandmortyapi.com/api/character')
         namePerson.innerHTML = char[idPerson].name
         buttons.forEach(btn => {
             btn.addEventListener('click', () => {
+                songClick.play()
                 let left = btn.classList.contains('arrow-left')
                 if (left) {
                     idPerson -= 1
@@ -50,8 +52,10 @@ fetch('https://rickandmortyapi.com/api/character')
 
     namePerson.addEventListener('click', () => {
         info.style.height = '470px'
+        songClick.play()
     })
 
     close.addEventListener('click', () => {
         info.style.height = '0px'
+        songClick.play()
     })
