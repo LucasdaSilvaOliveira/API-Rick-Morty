@@ -3,7 +3,7 @@ Consumindo API do Rick and Morty
 
 Praticando consumo de API
 
-Link:
+<a href="https://lucasdasilvaoliveira.github.io/API-Rick-Morty/" target="_blank">Link</a>
 
 https://lucasdasilvaoliveira.github.io/API-Rick-Morty/
 
